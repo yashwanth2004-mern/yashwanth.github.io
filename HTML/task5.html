@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Task 5</title>
+<style>
+html, body
+{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside
+{
+	padding: 2px 400px;
+	font-size: 16px;
+}
+
+table , th , td
+{
+border: 1px solid black;
+border-collapse: collapse;
+}
+table
+{
+width:800px;
+}
+input[type="text"],input[type="integer"],input[type="password"],input[type="Email"]
+{
+width:100%;
+}
+div p
+{
+color:blue;
+font-size: 30px;
+text-align: center;
+}
+div textarea
+{
+width:100%
+}
+#in
+{
+float:right;
+}
+#country
+{
+background-color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div id="s">
+
+<p><strong>Registration form</strong></p>
+<table id="tablediv">
+<tr>
+<th>First Name</th>
+<td>
+<input type="text" id="firstname" required>
+</td>
+</tr>
+
+<tr>
+<th>Last Name</th>
+<td>
+<input type ="text" id="lastname" required>
+</td>
+</tr>
+
+<tr>
+<th>Email</th>
+<td>
+<input type="Email" id="Email" required>
+</td>
+</tr>
+
+<tr>
+<th>Password</th>
+<td><input type="password" id="password" required></td>
+</tr>
+
+<tr>
+<th>Re-enter Password</th>
+<td><input type="password" required></td>
+</tr>
+
+<tr>
+<th rowspan="2">Gender:</th>
+<td>
+<input type="radio" name="male" value="male">
+<label for="male">Male</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="radio" name="female" value="female">
+<label for="female">Female</label>
+</td>
+</tr>
+
+
+<tr>
+<th>Age:</th>
+<td>
+<input type="Integer" id="age" required>
+</td>
+</tr>
+
+<tr>
+<th>Phone Number</th>
+<td><input type="Integer"></td>
+</tr>
+
+<tr id="add">
+<th>Address</th>
+<td>
+<textarea name="address" rows="6" cols="50"></textarea>
+</td>
+</tr>
+
+<tr>
+<th>State</th>
+<td>
+<input type="text" id="state">
+</td>
+</tr>
+
+<tr>
+<th>Country</th>
+<td>
+<select id="country">
+<option value="">choose your country</option>
+<option value="India">India</option>
+<option value="America">America</option>
+<option value="Australia">Australia</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<th>Languages Known</th>
+<td>
+<input type="checkbox" value="English" id="English">
+<label for="English" id="English">English</label>
+<input type="checkbox" value="Kannada" id="Kannada">
+<label for="Kannada" id="Kannada">Kannada</label>
+<input type="checkbox" value="Hindi" id="Hindi">
+<label for="Hindi" id="Hindi">Hindi</label> 
+<input type="checkbox" value="Telugu" id="Telugu">
+<label for="Telugu" id="Telugu">Teugu</label>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="checkbox" value="p" id="p">
+<label id="p">Hereby I declare all the given details are true</label>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<div id="in">
+Log in to <a href="">Ethnus</a> website
+</div>
+</td>
+</tr>
+</table><br>
+<div class="inside">
+<button type="button" onclick="alert('Registered!')">Register</button>
+</div>
+</div><br>
+
+
+<div>
+
+</div>
+
+</body>
+
+</html>
